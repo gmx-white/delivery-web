@@ -1,0 +1,192 @@
+.record-list-container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fafbfc;
+}
+.record-header {
+  width: 100%;
+  height: 64px;
+  background-color: #448a97;
+  font-size: 36px;
+  color: #fff;
+  line-height: 64px;
+}
+.record-logout {
+  position: absolute;
+  top: 32px;
+  right: 24px;
+  transform: translateY(-50%);
+}
+.record-list-wrapper {
+  width: 100%;
+}
+.record-list-wrapper .record-list-search {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  /* background-color: #fff; */
+}
+.record-list-search .ant-input-prefix {
+  margin-right: 10px;
+}
+.search-status-selector {
+  width: 48px;
+}
+.record-list-sort {
+  width: 100%;
+  margin-top: 24px;
+  background-color: #fff;
+}
+.sort-inner {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 48px;
+}
+.list-sort-options ul {
+  width: 480px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+.list-sort-options ul li {
+  flex: 1;
+}
+.list-sort-options ul li span img {
+  width: 9px;
+  height: 11px;
+}
+.list-sort-options ul li span .img-sort-up-hover,
+.list-sort-options ul li span .img-sort-down-hover {
+  display: none;
+}
+.list-sort-options ul li span:hover img {
+  display: none;
+}
+.list-sort-options ul li span:hover img.img-sort-down-hover {
+  display: inline-block;
+}
+.list-sort-options ul li.selected span.down:hover img {
+  display: none;
+}
+.list-sort-options ul li.selected span.down:hover img.img-sort-down-hover {
+  display: inline-block;
+}
+.list-sort-options ul li.selected span.up:hover img {
+  display: none;
+}
+.list-sort-options ul li.selected span.up:hover img.img-sort-up-hover {
+  display: inline-block;
+}
+ul li {
+  cursor: pointer;
+  font-size: 13px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #3D5270;
+}
+ul li.selected {
+  color: #3D6FFF;
+}
+.record-card-wrapper {
+  border: 1px solid #ebecf0;
+  background: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.record-card-wrapper:hover {
+  color: #3d6fff;
+  transform: scaleY(1.1);
+  transform: translateZ(0);
+  box-shadow: 0 5px 20px 0 rgba(204, 219, 243, 0.5);
+  transition: all 0.3s;
+}
+.record-card-wrapper:hover .record-delete {
+  color: red;
+}
+.record-card-wrapper .record-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.record-card-wrapper .record-card-title .card-icon {
+  margin-right: 12px;
+}
+.record-card-wrapper .record-card-title .card-icon img {
+  width: 24px;
+  height: 24px;
+}
+.record-card-wrapper .record-card-title .card-company-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.record-card-wrapper .record-card-title .card-company-title a {
+  color: #333;
+}
+.record-card-wrapper .record-card-title .card-company-title a:hover {
+  color: #5d88ec;
+}
+.record-card-wrapper .record-card-title .operator {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 200px;
+}
+.record-card-wrapper .record-card-title .operator .operation-icon {
+  margin-right: 12px;
+  font-size: 16px;
+}
+.record-card-wrapper .record-card-title .operator .record-edit {
+  cursor: pointer;
+}
+.record-card-wrapper .record-card-title .operator .record-delete {
+  cursor: pointer;
+}
+.record-card-baseinfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ul li {
+  font-size: 14px;
+  margin-right: 24px;
+}
+ul .ant-tag {
+  display: inline-block;
+  position: relative;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+ul .ant-tag svg {
+  vertical-align: middle;
+  color: #FFF;
+}
+.interview-process .interview-process-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.interview-process .interview-process-wrapper li {
+  margin-bottom: 12px;
+}
+.tip-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tip-content li {
+  height: 30px;
+  line-height: 30px;
+}
+.tip-content li .tool-color {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

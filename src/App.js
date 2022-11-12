@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
+import { Routes, Route } from 'react-router-dom'
+import Login from './components/login'
+import RecordList from './components/recordList';
+import Register from './components/register';
+import NoFoundPage from './components/404'
+import React from 'react';
+class App extends React.Component {
+  // history = createBrowserRouter()
+  render(){
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes >
+        <Route path='/login' element={<Login/>}>
+        </Route>
+        <Route path='/list' element={<RecordList/>}></Route>
+        <Route path='/register' element={<Register/>}></Route>
+        <Route path='*' element={<NoFoundPage/>}></Route>
+
+      </Routes>
     </div>
-  );
+  )}
 }
 
 export default App;
